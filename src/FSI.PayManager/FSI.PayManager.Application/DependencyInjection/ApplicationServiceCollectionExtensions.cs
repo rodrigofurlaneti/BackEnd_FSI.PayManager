@@ -15,7 +15,7 @@ namespace FSI.PayManager.Application.DependencyInjection
             services.AddScoped<ICrudAppService<RecurringTransactionDto>, RecurringTransactionAppService>();
             services.AddScoped<ICrudAppService<FinancialTransactionDto>, FinancialTransactionAppService>();
             services.AddScoped<ICrudAppService<ReminderDto>, ReminderAppService>();
-
+            services.AddScoped<IAuthAppService, AuthAppService>();
             return services;
         }
     }

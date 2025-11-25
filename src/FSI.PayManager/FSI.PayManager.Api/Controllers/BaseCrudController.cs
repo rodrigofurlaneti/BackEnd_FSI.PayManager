@@ -1,11 +1,13 @@
 ﻿using FSI.PayManager.Application.Dtos;
 using FSI.PayManager.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FSI.PayManager.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public abstract class BaseCrudController<TDto> : ControllerBase
         where TDto : class, IHasId
     {

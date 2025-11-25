@@ -7,8 +7,7 @@ namespace FSI.PayManager.Api.Controllers
     [Route("api/[controller]")]
     public sealed class RemindersController : BaseCrudController<ReminderDto>
     {
-        public RemindersController(ICrudAppService<ReminderDto> service)
-            : base(service)
+        public RemindersController(ICrudAppService<ReminderDto> service) : base(service)
         {
         }
     }

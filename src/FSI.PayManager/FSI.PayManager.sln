@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36401.2 d17.14
+VisualStudioVersion = 17.14.36401.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSI.PayManager.Domain", "FSI.PayManager.Domain\FSI.PayManager.Domain.csproj", "{72377401-5F9A-41BF-A507-EDF691625027}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSI.PayManager.Application", "FSI.PayManager.Application\FSI.PayManager.Application.csproj", "{54F8AFAA-DC96-49AE-B6F9-CB90AA8389FA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSI.PayManager.Api", "FSI.PayManager.Api\FSI.PayManager.Api.csproj", "{F21061B8-5A51-42CF-A3DE-9208CC0B1EF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSI.PayManager.UnitTests", "..\..\test\FSI.PayManager.UnitTests\FSI.PayManager.UnitTests.csproj", "{8609A191-16E0-4499-98F5-B7014756105E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F21061B8-5A51-42CF-A3DE-9208CC0B1EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F21061B8-5A51-42CF-A3DE-9208CC0B1EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F21061B8-5A51-42CF-A3DE-9208CC0B1EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8609A191-16E0-4499-98F5-B7014756105E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8609A191-16E0-4499-98F5-B7014756105E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8609A191-16E0-4499-98F5-B7014756105E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8609A191-16E0-4499-98F5-B7014756105E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
