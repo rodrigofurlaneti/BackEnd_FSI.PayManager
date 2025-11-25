@@ -133,36 +133,34 @@ O sistema permite controlar receitas, despesas, carteiras, categorias, transaç�
 
 ## 🏗️ Arquitetura
 
-```mermaid
-
 flowchart TD
 
-    subgraph API Layer
-        A1[Controllers\nAuth / Users / Wallets / Categories / Transactions / Recorrentes / Lembretes]
+    subgraph API_Layer [Camada API]
+        A1[Controllers - Auth, Users, Wallets, Categories, Transactions, Recorrentes, Lembretes]
     end
 
-    subgraph Application Layer
+    subgraph Application_Layer [Camada Application]
         B1[DTOs]
-        B2[Serviços\nUseCases]
+        B2[Serviços e UseCases]
         B3[Interfaces]
         B4[Mappers]
     end
 
-    subgraph Domain Layer
-        C1[Entidades\nUser, Wallet, Category,\nFinancialTransaction, Reminder,\nRecurringTransaction]
-        C2[Interfaces de Domínio\n(IRepository)]
+    subgraph Domain_Layer [Camada Domain]
+        C1[Entidades - User, Wallet, Category, FinancialTransaction, Reminder, RecurringTransaction]
+        C2[Interfaces de Domínio - Repository Pattern]
         C3[Value Objects]
     end
 
-    subgraph Infrastructure Layer
-        D1[Repositórios (Dapper)]
-        D2[MySQL Context]
-        D3[Jwt / Hash Providers]
+    subgraph Infrastructure_Layer [Camada Infrastructure]
+        D1[Repositórios usando Dapper]
+        D2[Contexto MySQL]
+        D3[Jwt e Hash Providers]
     end
 
-    subgraph External
-        E1[(Banco MySQL)]
-        E2[(Autenticação JWT)]
+    subgraph External_Services [Serviços Externos]
+        E1[Banco MySQL]
+        E2[Provedor JWT]
     end
 
     A1 --> B2
