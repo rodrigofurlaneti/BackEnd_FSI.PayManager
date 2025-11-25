@@ -35,32 +35,32 @@ It allows users to manage incomes, expenses, wallets, categories, recurring tran
 ```mermaid
 flowchart TD
 
-    subgraph API Layer
-        A1[Controllers\nAuth / Users / Wallets / Categories / Transactions / Recurring / Reminders]
+    subgraph API_Layer [API Layer]
+        A1[Controllers - Auth, Users, Wallets, Categories, Transactions, Recurring, Reminders]
     end
 
-    subgraph Application Layer
+    subgraph Application_Layer [Application Layer]
         B1[DTOs]
-        B2[Services\nUseCases]
+        B2[Services and UseCases]
         B3[Interfaces]
         B4[Mappers]
     end
 
-    subgraph Domain Layer
-        C1[Entities\nUser, Wallet, Category,\nFinancialTransaction, Reminder,\nRecurringTransaction]
-        C2[Domain Interfaces\n(IRepository)]
+    subgraph Domain_Layer [Domain Layer]
+        C1[Entities - User, Wallet, Category, FinancialTransaction, Reminder, RecurringTransaction]
+        C2[Domain Interfaces - Repository Pattern]
         C3[Value Objects]
     end
 
-    subgraph Infrastructure Layer
-        D1[Repositories (Dapper)]
+    subgraph Infrastructure_Layer [Infrastructure Layer]
+        D1[Repositories using Dapper]
         D2[MySQL Context]
-        D3[Jwt / Hash Providers]
+        D3[Jwt and Hash Providers]
     end
 
-    subgraph External
-        E1[(MySQL Database)]
-        E2[(JWT Authentication)]
+    subgraph External_Services [External Services]
+        E1[MySQL Database]
+        E2[JWT Authentication Provider]
     end
 
     A1 --> B2
