@@ -1,19 +1,31 @@
 ﻿# PayManager – Personal Finance Management System  
 # PayManager – Sistema de Gerenciamento Financeiro Pessoal
 
-PayManager is a modern and scalable personal finance management system built with .NET 8, following Clean Architecture and Domain-Driven Design principles.  
+<span style="color:#1E90FF; font-size: 17px;">
+PayManager is a modern and scalable personal finance management system built with .NET 8, following Clean Architecture and Domain-Driven Design principles.
+</span>  
+<span style="color:#2E8B57; font-size: 17px;">
 O PayManager é um sistema moderno e escalável de gerenciamento financeiro pessoal desenvolvido em .NET 8, seguindo os princípios de Clean Architecture e Domain-Driven Design.
+</span>
 
 ---
 
 ## 📌 About the Project  
 ## 📌 Sobre o Projeto
 
-PayManager allows users to control expenses and incomes, manage multiple wallets, categorize transactions, schedule recurring payments, and receive reminders before due dates.  
+<span style="color:#1E90FF;">
+PayManager allows users to control expenses and incomes, manage multiple wallets, categorize transactions, schedule recurring payments, and receive reminders before due dates.
+</span>  
+<span style="color:#2E8B57;">
 O PayManager permite que os usuários controlem despesas e receitas, gerenciem múltiplas carteiras, categorizem transações, agendem pagamentos recorrentes e recebam lembretes antes do vencimento das contas.
+</span>
 
-The solution was designed to be secure, modular, and easy to extend.  
+<span style="color:#1E90FF;">
+The solution was designed to be secure, modular, and easy to extend.
+</span>  
+<span style="color:#2E8B57;">
 A solução foi projetada para ser segura, modular e fácil de expandir.
+</span>
 
 ---
 
@@ -26,57 +38,56 @@ A solução foi projetada para ser segura, modular e fácil de expandir.
 ### ✔ Full transaction management  
 ### ✔ Gestão completa de transações
 
-- Income (receitas)  
-- Expense (despesas)  
-- Transfer (transferências)  
-- Status: Pending, Paid, Overdue, Canceled  
-- Status: Pendente, Pago, Atrasado, Cancelado
+<span style="color:#1E90FF;">
+• Income  
+• Expense  
+• Transfer  
+• Status: Pending, Paid, Overdue, Canceled  
+</span>
+<span style="color:#2E8B57;">
+• Receita  
+• Despesa  
+• Transferência  
+• Status: Pendente, Pago, Atrasado, Cancelado  
+</span>
 
 ### ✔ Recurring transactions  
 ### ✔ Transações recorrentes
 
-Supports: Daily, Weekly, Monthly, Yearly  
-Suporta: Diário, Semanal, Mensal, Anual
+<span style="color:#1E90FF;">Supports: Daily, Weekly, Monthly, Yearly</span>  
+<span style="color:#2E8B57;">Suporta: Diário, Semanal, Mensal, Anual</span>
 
 ### ✔ Reminders  
 ### ✔ Lembretes
 
-Users receive reminders before due dates.  
-Usuários recebem lembretes antes do vencimento.
+<span style="color:#1E90FF;">Users receive alerts before due dates.</span>  
+<span style="color:#2E8B57;">Usuários recebem alertas antes do vencimento.</span>
 
 ### ✔ Wallet management  
 ### ✔ Gerenciamento de carteiras
 
-Multiple wallets per user with initial balance and default wallet.  
-Múltiplas carteiras por usuário com saldo inicial e carteira padrão.
+<span style="color:#1E90FF;">Multiple wallets with balances and default wallet.</span>  
+<span style="color:#2E8B57;">Múltiplas carteiras com saldos e carteira padrão.</span>
 
 ### ✔ Categories  
 ### ✔ Categorias
 
-User-defined and system-defined categories.  
-Categorias personalizadas e categorias do sistema.
+<span style="color:#1E90FF;">Custom or system-level financial categories.</span>  
+<span style="color:#2E8B57;">Categorias financeiras customizadas ou do sistema.</span>
 
 ### ✔ JWT Authentication  
 ### ✔ Autenticação JWT
 
-Secure login, token generation, and password hashing (BCrypt).  
-Login seguro, geração de token e hash de senha (BCrypt).
+<span style="color:#1E90FF;">Secure login and password hashing (BCrypt).</span>  
+<span style="color:#2E8B57;">Login seguro e hash de senha (BCrypt).</span>
 
 ---
 
 ## 🏗️ Architecture  
 ## 🏗️ Arquitetura
 
-The project follows **Clean Architecture** and **DDD**:  
-O projeto segue **Clean Architecture** e **DDD**:
-
-src/
-├── FSI.PayManager.Domain
-├── FSI.PayManager.Application
-├── FSI.PayManager.Infrastructure
-└── FSI.PayManager.Api
-tests/
-└── FSI.PayManager.Domain.Tests
+<span style="color:#1E90FF;">The project follows Clean Architecture and DDD:</span>  
+<span style="color:#2E8B57;">O projeto segue Clean Architecture e DDD:</span>
 
 
 ---
@@ -91,7 +102,6 @@ tests/
 - JWT Authentication  
 - BCrypt.Net  
 - xUnit + FluentAssertions  
-- Coverlet  
 - Clean Architecture  
 - Domain-Driven Design  
 
@@ -100,8 +110,8 @@ tests/
 ## 🧪 Tests  
 ## 🧪 Testes
 
-The Domain layer contains complete unit tests for all entities and repository behaviors.  
-A camada Domain contém testes unitários completos para todas as entidades e comportamentos do repositório.
+<span style="color:#1E90FF;">Domain layer fully covered by unit tests.</span>  
+<span style="color:#2E8B57;">A camada Domain possui cobertura completa por testes unitários.</span>
 
 ---
 
@@ -125,6 +135,5 @@ A camada Domain contém testes unitários completos para todas as entidades e co
 ## 📜 License  
 ## 📜 Licença
 
-This project is open-source under the MIT license.  
-Este projeto é open-source sob a licença MIT.
-
+<span style="color:#1E90FF;">This project is open-source under the MIT license.</span>  
+<span style="color:#2E8B57;">Este projeto é open-source sob a licença MIT.</span>
