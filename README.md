@@ -32,6 +32,44 @@ It allows users to manage incomes, expenses, wallets, categories, recurring tran
 
 ## 🏗️ Architecture
 
+```mermaid
+flowchart TD
+
+    subgraph API Layer
+        A1[Controllers\nAuth / Users / Wallets / Categories / Transactions / Recurring / Reminders]
+    end
+
+    subgraph Application Layer
+        B1[DTOs]
+        B2[Services\nUseCases]
+        B3[Interfaces]
+        B4[Mappers]
+    end
+
+    subgraph Domain Layer
+        C1[Entities\nUser, Wallet, Category,\nFinancialTransaction, Reminder,\nRecurringTransaction]
+        C2[Domain Interfaces\n(IRepository)]
+        C3[Value Objects]
+    end
+
+    subgraph Infrastructure Layer
+        D1[Repositories (Dapper)]
+        D2[MySQL Context]
+        D3[Jwt / Hash Providers]
+    end
+
+    subgraph External
+        E1[(MySQL Database)]
+        E2[(JWT Authentication)]
+    end
+
+    A1 --> B2
+    B2 --> C1
+    B2 --> C2
+    C2 --> D1
+    D1 --> E1
+    A1 --> E2
+```
 
 ---
 
@@ -95,6 +133,45 @@ O sistema permite controlar receitas, despesas, carteiras, categorias, transaç�
 
 ## 🏗️ Arquitetura
 
+```mermaid
+
+flowchart TD
+
+    subgraph API Layer
+        A1[Controllers\nAuth / Users / Wallets / Categories / Transactions / Recorrentes / Lembretes]
+    end
+
+    subgraph Application Layer
+        B1[DTOs]
+        B2[Serviços\nUseCases]
+        B3[Interfaces]
+        B4[Mappers]
+    end
+
+    subgraph Domain Layer
+        C1[Entidades\nUser, Wallet, Category,\nFinancialTransaction, Reminder,\nRecurringTransaction]
+        C2[Interfaces de Domínio\n(IRepository)]
+        C3[Value Objects]
+    end
+
+    subgraph Infrastructure Layer
+        D1[Repositórios (Dapper)]
+        D2[MySQL Context]
+        D3[Jwt / Hash Providers]
+    end
+
+    subgraph External
+        E1[(Banco MySQL)]
+        E2[(Autenticação JWT)]
+    end
+
+    A1 --> B2
+    B2 --> C1
+    B2 --> C2
+    C2 --> D1
+    D1 --> E1
+    A1 --> E2
+```
 
 ---
 
