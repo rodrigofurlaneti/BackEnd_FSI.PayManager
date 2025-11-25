@@ -133,6 +133,7 @@ O sistema permite controlar receitas, despesas, carteiras, categorias, transaç�
 
 ## 🏗️ Arquitetura
 
+```mermaid
 flowchart TD
 
     subgraph API_Layer [Camada API]
